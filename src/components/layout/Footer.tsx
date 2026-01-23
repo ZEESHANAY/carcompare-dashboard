@@ -1,0 +1,59 @@
+import Link from 'next/link';
+
+export default function Footer() {
+    return (
+        <footer className="footer">
+            <div className="container">
+                <div className="footer-grid">
+                    <div className="footer-brand">
+                        <Link href="/" className="navbar-logo">
+                            CarCompare
+                        </Link>
+                        <p>
+                            The smartest way to compare vehicles. Make informed decisions with comprehensive specs, warranty details, and market insights.
+                        </p>
+                    </div>
+
+                    <div className="footer-column">
+                        <h4>Product</h4>
+                        <ul className="footer-links">
+                            <li><Link href="/compare">Compare Cars</Link></li>
+                            <li><Link href="/cars">Browse All</Link></li>
+                            <li><Link href="#features">Features</Link></li>
+                            <li><Link href="#pricing">Pricing</Link></li>
+                        </ul>
+                    </div>
+
+                    <div className="footer-column">
+                        <h4>Resources</h4>
+                        <ul className="footer-links">
+                            <li><Link href="#">Buying Guide</Link></li>
+                            <li><Link href="#">Car Reviews</Link></li>
+                            <li><Link href="#">News</Link></li>
+                            <li><Link href="#">Blog</Link></li>
+                        </ul>
+                    </div>
+
+                    <div className="footer-column">
+                        <h4>Company</h4>
+                        <ul className="footer-links">
+                            <li><Link href="#">About Us</Link></li>
+                            <li><Link href="#">Contact</Link></li>
+                            <li><Link href="#">Privacy</Link></li>
+                            <li><Link href="#">Terms</Link></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="footer-bottom">
+                    <p>© 2026 CarCompare. All rights reserved.</p>
+                    <div className="flex gap-4">
+                        <Link href="#" className="text-muted">Twitter</Link>
+                        <Link href="#" className="text-muted">LinkedIn</Link>
+                        <Link href="#" className="text-muted">GitHub</Link>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    );
+}
