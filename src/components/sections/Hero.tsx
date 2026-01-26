@@ -1,6 +1,6 @@
 'use client';
 
-import LottieAnimation from '../ui/LottieAnimation';
+
 import Link from 'next/link';
 
 export default function Hero() {
@@ -25,9 +25,17 @@ export default function Hero() {
                 </div>
 
                 <div className="hero-visual animate-fadeIn stagger-2">
-                    <LottieAnimation
-                        src="https://assets2.lottiefiles.com/packages/lf20_kyu7xb1v.json"
-                        size="xl"
+                    <img
+                        src="/hero-visual.png"
+                        alt="Car Comparison Dashboard"
+                        style={{
+                            width: '100%',
+                            maxWidth: '1000px',
+                            height: 'auto',
+                            borderRadius: 'var(--radius-xl)',
+                            boxShadow: 'var(--shadow-lg)',
+                            backgroundColor: 'white'
+                        }}
                     />
                 </div>
             </div>
