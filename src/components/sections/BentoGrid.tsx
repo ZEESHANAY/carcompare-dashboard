@@ -14,9 +14,9 @@ const bentoItems = [
         id: 2,
         title: 'Horsepower & Torque',
         description: 'See engine performance metrics at a glance. HP, Nm, and acceleration data.',
-        size: 'bento-sm',
+        size: 'bento-md',
         stats: [
-            { value: '450+', label: 'Average HP' },
+            { value: '450+', label: 'Available HP' },
             { value: '500+', label: 'Nm Torque' },
         ],
     },
@@ -35,13 +35,6 @@ const bentoItems = [
         badge: 'Real-time data',
     },
     {
-        id: 5,
-        title: 'Brand Heritage',
-        description: 'Explore the history and legacy of automotive manufacturers. From founding stories to modern innovations.',
-        size: 'bento-md bento-tall',
-        lottie: 'https://assets1.lottiefiles.com/packages/lf20_w51pcehl.json',
-    },
-    {
         id: 6,
         title: 'Fuel Economy',
         description: 'City and highway MPG ratings for informed fuel cost planning.',
@@ -50,6 +43,13 @@ const bentoItems = [
             { value: '28', label: 'City MPG' },
             { value: '35', label: 'Highway' },
         ],
+    },
+    {
+        id: 5,
+        title: 'Brand Heritage',
+        description: 'Explore the history and legacy of automotive manufacturers. From founding stories to modern innovations.',
+        size: 'bento-full',
+        lottie: 'https://assets1.lottiefiles.com/packages/lf20_w51pcehl.json',
     },
 ];
 

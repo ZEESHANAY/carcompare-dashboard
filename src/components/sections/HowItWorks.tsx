@@ -19,7 +19,7 @@ const steps = [
         number: '03',
         title: 'Analyze & Decide',
         description: 'Review side-by-side specs, warranty terms, and make your informed decision.',
-        lottie: 'https://assets7.lottiefiles.com/packages/lf20_8gmx5foj.json',
+        lottie: 'https://assets9.lottiefiles.com/packages/lf20_5tkzkblw.json',
     },
 ];
 

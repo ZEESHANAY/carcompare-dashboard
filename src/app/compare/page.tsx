@@ -62,8 +62,8 @@ export default function ComparePage() {
                                             height: 24,
                                             borderRadius: '50%',
                                             border: `2px solid ${selectedCars.includes(car.id)
-                                                    ? 'var(--accent-primary)'
-                                                    : 'var(--border-subtle)'
+                                                ? 'var(--accent-primary)'
+                                                : 'var(--border-subtle)'
                                                 }`,
                                             backgroundColor: selectedCars.includes(car.id)
                                                 ? 'var(--accent-primary)'
@@ -106,7 +106,29 @@ export default function ComparePage() {
                                     <tr style={{ backgroundColor: 'var(--bg-hover)' }}>
                                         <th style={{ width: 200 }}>Specification</th>
                                         {selectedCarData.map((car) => (
-                                            <th key={car.id}>
+                                            <th key={car.id} style={{ paddingBottom: 'var(--space-4)' }}>
+                                                <div style={{
+                                                    width: '100%',
+                                                    height: 140,
+                                                    marginBottom: 'var(--space-3)',
+                                                    borderRadius: 'var(--radius-md)',
+                                                    overflow: 'hidden',
+                                                    backgroundColor: 'var(--bg-surface)',
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
+                                                    border: '1px solid var(--border-subtle)'
+                                                }}>
+                                                    <img
+                                                        src={car.image}
+                                                        alt={car.model}
+                                                        style={{
+                                                            width: '100%',
+                                                            height: '100%',
+                                                            objectFit: 'cover'
+                                                        }}
+                                                    />
+                                                </div>
                                                 <div className="text-caption">{car.brand}</div>
                                                 <div className="text-section">{car.model}</div>
                                             </th>
@@ -269,10 +291,10 @@ export default function ComparePage() {
                                         {selectedCarData.map((car) => (
                                             <td key={car.id}>
                                                 <span className={`badge ${car.availability.status === 'available'
-                                                        ? 'badge-success'
-                                                        : car.availability.status === 'limited'
-                                                            ? 'badge-warning'
-                                                            : ''
+                                                    ? 'badge-success'
+                                                    : car.availability.status === 'limited'
+                                                        ? 'badge-warning'
+                                                        : ''
                                                     }`}>
                                                     {car.availability.status === 'available' ? 'Available' :
                                                         car.availability.status === 'limited' ? 'Limited' : 'Coming Soon'}
