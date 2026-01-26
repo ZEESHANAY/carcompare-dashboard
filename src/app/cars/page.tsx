@@ -25,33 +25,25 @@ export default function CarsPage() {
                                 href={`/cars/${car.slug}`}
                                 className="car-card"
                             >
-                                <div className="car-card-image">
-                                    <svg
-                                        width="64"
-                                        height="64"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeWidth="1"
-                                        style={{ color: 'var(--text-muted)' }}
-                                    >
-                                        <path d="M7 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
-                                        <path d="M17 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
-                                        <path d="M5 9l2-4h10l2 4" />
-                                        <path d="M5 9v6h2" />
-                                        <path d="M19 9v6h-2" />
-                                        <path d="M5 9h14" />
-                                        <path d="M9 15h6" />
-                                    </svg>
+                                <div className="car-card-image" style={{ position: 'relative', height: 200, padding: 0 }}>
+                                    <img
+                                        src={car.image}
+                                        alt={car.model}
+                                        style={{
+                                            width: '100%',
+                                            height: '100%',
+                                            objectFit: 'cover'
+                                        }}
+                                    />
                                 </div>
                                 <div className="car-card-content">
                                     <div className="flex items-center justify-between">
                                         <span className="car-card-brand">{car.brand}</span>
                                         <span className={`badge ${car.availability.status === 'available'
-                                                ? 'badge-success'
-                                                : car.availability.status === 'limited'
-                                                    ? 'badge-warning'
-                                                    : ''
+                                            ? 'badge-success'
+                                            : car.availability.status === 'limited'
+                                                ? 'badge-warning'
+                                                : ''
                                             }`}>
                                             {car.availability.status}
                                         </span>
