@@ -173,7 +173,7 @@ export const cars: Car[] = [
         model: 'GR Supra',
         year: 2024,
         category: 'Sports Car',
-        image: '/cars/toyota-supra.jpg',
+        image: 'https://4kwallpapers.com/images/wallpapers/toyota-gr-supra-3840x2160-11896.jpg',
         specs: {
             horsepower: 382,
             torque: 368,
@@ -205,7 +205,7 @@ export const cars: Car[] = [
         model: 'RS 7 Sportback',
         year: 2024,
         category: 'Sports Sedan',
-        image: '/cars/audi-rs7.jpg',
+        image: 'https://images.unsplash.com/photo-1621259182978-fbf93132d53d?q=80&w=2000&auto=format&fit=crop',
         specs: {
             horsepower: 621,
             torque: 627,
@@ -237,7 +237,7 @@ export const cars: Car[] = [
         model: 'Civic Type R',
         year: 2024,
         category: 'Hot Hatch',
-        image: '/cars/honda-type-r.jpg',
+        image: 'https://images.unsplash.com/photo-1618482815162-f2307ef66710?q=80&w=2000&auto=format&fit=crop',
         specs: {
             horsepower: 315,
             torque: 310,
@@ -269,7 +269,7 @@ export const cars: Car[] = [
         model: 'Mustang GT',
         year: 2024,
         category: 'Muscle Car',
-        image: '/cars/ford-mustang.jpg',
+        image: 'https://images.unsplash.com/photo-1584345604476-8ec5e12e42dd?q=80&w=2000&auto=format&fit=crop',
         specs: {
             horsepower: 486,
             torque: 418,
@@ -301,7 +301,7 @@ export const cars: Car[] = [
         model: 'Huracán EVO',
         year: 2024,
         category: 'Supercar',
-        image: '/cars/lamborghini-huracan.jpg',
+        image: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?q=80&w=2000&auto=format&fit=crop',
         specs: {
             horsepower: 631,
             torque: 442,
@@ -333,7 +333,7 @@ export const cars: Car[] = [
         model: 'Corvette Z06',
         year: 2024,
         category: 'Sports Car',
-        image: '/cars/corvette-z06.jpg',
+        image: 'https://images.unsplash.com/photo-1614200187524-dc4b892acf16?q=80&w=2000&auto=format&fit=crop',
         specs: {
             horsepower: 670,
             torque: 460,
@@ -365,7 +365,7 @@ export const cars: Car[] = [
         model: 'GT-R NISMO',
         year: 2024,
         category: 'Sports Car',
-        image: '/cars/nissan-gtr.jpg',
+        image: 'https://images.unsplash.com/photo-1612053158066-cd061245036d?q=80&w=2000&auto=format&fit=crop',
         specs: {
             horsepower: 600,
             torque: 481,
@@ -397,7 +397,7 @@ export const cars: Car[] = [
         model: 'LC 500',
         year: 2024,
         category: 'Grand Tourer',
-        image: '/cars/lexus-lc500.jpg',
+        image: 'https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?q=80&w=2000&auto=format&fit=crop',
         specs: {
             horsepower: 471,
             torque: 398,
