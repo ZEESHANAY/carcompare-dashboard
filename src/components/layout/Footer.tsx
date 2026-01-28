@@ -19,8 +19,8 @@ export default function Footer() {
                         <ul className="footer-links">
                             <li><Link href="/compare">Compare Cars</Link></li>
                             <li><Link href="/cars">Browse All</Link></li>
-                            <li><Link href="#features">Features</Link></li>
-                            <li><Link href="#pricing">Pricing</Link></li>
+                            <li><Link href="/features">Features</Link></li>
+                            <li><Link href="/how-it-works">How It Works</Link></li>
                         </ul>
                     </div>
 
