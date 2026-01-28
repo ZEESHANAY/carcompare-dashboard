@@ -8,22 +8,31 @@ export default function CarReviewsPage() {
             name: 'BMW M4 Competition',
             image: 'https://images.unsplash.com/photo-1617814076367-b759c7d826c1?q=80&w=800&auto=format&fit=crop',
             rating: 9.2,
-            summary: 'The ultimate driving machine gets a tech-heavy makeover that actually works.'
+            summary: 'The ultimate driving machine gets a tech-heavy makeover that actually works.',
+            reviewer: 'Emma Wilson'
         },
         {
             id: 2,
             name: 'Tesla Model Y',
             image: 'https://images.unsplash.com/photo-1619767886558-efdc259cde1a?q=80&w=800&auto=format&fit=crop',
             rating: 8.8,
-            summary: 'Still the benchmark for practical electric family transport, despite growing competition.'
+            summary: 'Still the benchmark for practical electric family transport, despite growing competition.',
+            reviewer: 'Marcus Chen'
         },
         {
             id: 3,
             name: 'Toyota RAV4 Hybrid',
             image: 'https://images.unsplash.com/photo-1621135802920-133df287f89c?q=80&w=800&auto=format&fit=crop',
             rating: 8.5,
-            summary: 'Reliability meets efficiency in a package that defines its segment.'
+            summary: 'Reliability meets efficiency in a package that defines its segment.',
+            reviewer: 'Sarah Miller'
         }
+    ];
+
+    const reviewers = [
+        { name: 'Emma Wilson', role: 'Lead Track Tester', initial: 'EW' },
+        { name: 'Marcus Chen', role: 'Daily Driver Specialist', initial: 'MC' },
+        { name: 'Sarah Miller', role: 'EV & Tech Analyst', initial: 'SM' },
     ];
 
     return (
@@ -31,14 +40,18 @@ export default function CarReviewsPage() {
             {/* Hero */}
             <section className="section bg-surface">
                 <div className="container">
-                    <h1 className="text-hero mb-4">Expert Car Reviews</h1>
-                    <p className="text-body-lg text-secondary mb-8">
-                        Honest, data-driven assessments of the latest vehicles. We test them so you don't have to.
+                    <span className="badge badge-accent mb-4">Expert Reviews</span>
+                    <h1 className="text-display mb-4" style={{ fontSize: '48px' }}>Honest, Unbiased Assessments</h1>
+                    <p className="text-body-lg text-secondary mb-8" style={{ maxWidth: 700 }}>
+                        Every vehicle we review undergoes a rigorous 500-mile testing protocol across city streets, open highways, and demanding backroads. We don't just read the spec sheet; we live with the car.
                     </p>
-                    <div className="flex gap-4">
-                        <div className="card p-4 border-none bg-hover">
-                            <h4 className="font-bold text-sm">Our Methodology</h4>
-                            <p className="text-caption">Every car undergoes 500 miles of real-world driving across city, highway, and backroads.</p>
+                    <div className="card p-6 border-none bg-hover inline-block">
+                        <div className="flex gap-4 items-center">
+                            <div className="testimonial-avatar" style={{ width: 40, height: 40 }}>✓</div>
+                            <div>
+                                <h4 className="font-bold text-sm">Certified Methodology</h4>
+                                <p className="text-caption text-secondary">Our testing process is 100% independent and manufacturer-neutral.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -47,20 +60,24 @@ export default function CarReviewsPage() {
             {/* Featured Reviews */}
             <section className="section">
                 <div className="container">
-                    <h2 className="text-title mb-8">Latest Featured Reviews</h2>
+                    <div className="flex justify-between items-end mb-8">
+                        <h2 className="text-title">Latest Reviews</h2>
+                        <Link href="#" className="link text-sm">View All 500+ Reviews →</Link>
+                    </div>
                     <div className="grid grid-3 gap-6">
                         {reviews.map(review => (
                             <div key={review.id} className="car-card">
-                                <div className="car-card-image" style={{ height: 200, overflow: 'hidden' }}>
+                                <div className="car-card-image" style={{ height: 220 }}>
                                     <img src={review.image} alt={review.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                    <div className="car-card-badge" style={{ top: 12, right: 12, background: 'var(--text-primary)', color: 'white' }}>
+                                        {review.rating}
+                                    </div>
                                 </div>
                                 <div className="car-card-content">
-                                    <div className="flex justify-between items-center mb-2">
-                                        <h3 className="font-bold">{review.name}</h3>
-                                        <span className="badge badge-accent">{review.rating} / 10</span>
-                                    </div>
-                                    <p className="text-sm text-secondary mb-4">{review.summary}</p>
-                                    <Link href="#" className="btn btn-secondary btn-sm w-full">Read Full Review</Link>
+                                    <h3 className="font-bold mb-1">{review.name}</h3>
+                                    <p className="text-caption text-secondary mb-4">Reviewed by {review.reviewer}</p>
+                                    <p className="text-sm text-secondary mb-6">{review.summary}</p>
+                                    <Link href="#" className="btn btn-secondary btn-sm w-full">Detailed Analysis</Link>
                                 </div>
                             </div>
                         ))}
@@ -71,11 +88,11 @@ export default function CarReviewsPage() {
             {/* Categories */}
             <section className="section bg-surface">
                 <div className="container">
-                    <h2 className="text-title mb-8">Browse by Category</h2>
-                    <div className="grid grid-3 gap-4">
-                        {['Sedans', 'SUVs', 'Trucks', 'Electric Vehicles', 'Luxury', 'Budget-Friendly'].map(cat => (
-                            <Link key={cat} href="#" className="card text-center hover:bg-hover transition-colors">
-                                <span className="font-semibold">{cat}</span>
+                    <h2 className="text-title mb-8">Browse by Segment</h2>
+                    <div className="grid grid-6 gap-4">
+                        {['Sedans', 'SUVs', 'Trucks', 'EVs', 'Luxury', 'Budget'].map(cat => (
+                            <Link key={cat} href="#" className="card p-4 text-center hover:bg-hover transition-colors border-none bg-canvas">
+                                <span className="text-sm font-semibold">{cat}</span>
                             </Link>
                         ))}
                     </div>
@@ -85,67 +102,37 @@ export default function CarReviewsPage() {
             {/* Scoring System */}
             <section className="section">
                 <div className="container">
-                    <h2 className="text-title mb-8 text-center">How We Score</h2>
-                    <div className="grid grid-2 gap-12">
-                        <div className="flex flex-col gap-6">
-                            <div className="flex gap-4">
-                                <div className="feature-icon" style={{ width: 40, height: 40 }}>1</div>
-                                <div>
-                                    <h4 className="font-bold">Performance</h4>
-                                    <p className="text-sm text-secondary">Acceleration, handling, braking, and engine refinement.</p>
-                                </div>
+                    <h2 className="text-title mb-12 text-center">Our 5-Pillar Scoring System</h2>
+                    <div className="grid grid-5 gap-6">
+                        {[
+                            { title: 'Performance', desc: 'Acceleration, handling, and braking dynamics.', icon: '🏎️' },
+                            { title: 'Comfort', desc: 'Ride quality, seating, and cabin quietness.', icon: '🛋️' },
+                            { title: 'Tech', desc: 'Infotainment and driver assistance systems.', icon: '📱' },
+                            { title: 'Value', desc: 'MSRP vs features and resale projection.', icon: '💰' },
+                            { title: 'Safety', desc: 'Crash tests and active safety equipment.', icon: '🛡️' },
+                        ].map((pillar, i) => (
+                            <div key={i} className="card text-center flex flex-col items-center">
+                                <div style={{ fontSize: 32, marginBottom: 'var(--space-2)' }}>{pillar.icon}</div>
+                                <h4 className="font-bold mb-2">{pillar.title}</h4>
+                                <p className="text-xs text-secondary">{pillar.desc}</p>
                             </div>
-                            <div className="flex gap-4">
-                                <div className="feature-icon" style={{ width: 40, height: 40 }}>2</div>
-                                <div>
-                                    <h4 className="font-bold">Comfort</h4>
-                                    <p className="text-sm text-secondary">Ride quality, seat support, cabin noise, and ergonomics.</p>
-                                </div>
-                            </div>
-                            <div className="flex gap-4">
-                                <div className="feature-icon" style={{ width: 40, height: 40 }}>3</div>
-                                <div>
-                                    <h4 className="font-bold">Value</h4>
-                                    <p className="text-sm text-secondary">MSRP vs features, fuel economy, and projected resale value.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="flex flex-col gap-6">
-                            <div className="flex gap-4">
-                                <div className="feature-icon" style={{ width: 40, height: 40 }}>4</div>
-                                <div>
-                                    <h4 className="font-bold">Technology</h4>
-                                    <p className="text-sm text-secondary">Infotainment, driver assists, and connectivity features.</p>
-                                </div>
-                            </div>
-                            <div className="flex gap-4">
-                                <div className="feature-icon" style={{ width: 40, height: 40 }}>5</div>
-                                <div>
-                                    <h4 className="font-bold">Safety</h4>
-                                    <p className="text-sm text-secondary">Crash test ratings and standard safety equipment.</p>
-                                </div>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </section>
 
-            {/* Template Preview */}
+            {/* Meet the Reviewers */}
             <section className="section bg-surface">
-                <div className="container" style={{ maxWidth: 800 }}>
-                    <h2 className="text-title mb-6 text-center">Inside a CarCompare Review</h2>
-                    <div className="card bento-full" style={{ border: '2px dashed var(--border-subtle)', background: 'transparent' }}>
-                        <div className="flex flex-col gap-4">
-                            <div className="h-4 bg-hover w-1/3 rounded"></div>
-                            <div className="h-40 bg-hover w-full rounded"></div>
-                            <div className="grid grid-2 gap-4">
-                                <div className="h-20 bg-hover rounded"></div>
-                                <div className="h-20 bg-hover rounded"></div>
+                <div className="container">
+                    <h2 className="text-title mb-12 text-center">Meet the Review Team</h2>
+                    <div className="flex justify-center gap-12">
+                        {reviewers.map(r => (
+                            <div key={r.name} className="flex flex-col items-center text-center">
+                                <div className="testimonial-avatar mb-4" style={{ width: 64, height: 64, background: 'var(--text-primary)', color: 'white' }}>{r.initial}</div>
+                                <h4 className="font-bold text-sm">{r.name}</h4>
+                                <p className="text-caption text-secondary">{r.role}</p>
                             </div>
-                            <div className="h-4 bg-hover w-full rounded"></div>
-                            <div className="h-4 bg-hover w-3/4 rounded"></div>
-                        </div>
-                        <p className="text-center mt-6 text-muted font-italic">Detailed specs, Pro/Con lists, and high-res gallery in every review.</p>
+                        ))}
                     </div>
                 </div>
             </section>
@@ -153,10 +140,13 @@ export default function CarReviewsPage() {
             {/* CTA */}
             <section className="section">
                 <div className="container">
-                    <div className="cta-section" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--text-primary)' }}>
-                        <h2 className="text-2xl font-bold mb-4">Own a vehicle we haven't reviewed?</h2>
-                        <p className="mb-8 text-secondary">Share your owner experience and help other buyers make informed decisions.</p>
-                        <button className="btn btn-primary btn-lg">Submit User Review</button>
+                    <div className="cta-section" style={{ background: 'var(--text-primary)', color: 'white', padding: 'var(--space-16)' }}>
+                        <h2 className="text-3xl font-bold mb-4">Don't buy without a deep dive.</h2>
+                        <p className="mb-8" style={{ color: 'rgba(255,255,255,0.7)' }}>Subscribe to get our weekly expert review delivered to your inbox.</p>
+                        <div className="flex gap-2 max-w-md mx-auto">
+                            <input type="email" placeholder="Email address" className="input" style={{ background: 'white', flex: 1 }} />
+                            <button className="btn btn-secondary">Subscribe</button>
+                        </div>
                     </div>
                 </div>
             </section>

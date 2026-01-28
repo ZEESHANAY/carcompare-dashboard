@@ -60,6 +60,10 @@ export default function BuyingGuidePage() {
                             <p className="text-sm text-secondary">Front-Wheel is efficient, Rear-Wheel is sporty, and All-Wheel Drive provides better traction in snow and rain.</p>
                         </div>
                     </div>
+                    <div className="card bg-hover border-none p-4 mt-6">
+                        <h4 className="font-bold text-sm mb-1">💡 Pro Tip</h4>
+                        <p className="text-xs text-secondary">Always compare "Combined MPG" rather than just Highway to get a more realistic view of your weekly fuel budget.</p>
+                    </div>
                 </div>
             </section>
 
@@ -140,24 +144,24 @@ export default function BuyingGuidePage() {
                 <div className="container">
                     <h2 className="text-title mb-8">The 15-Point Test Drive Checklist</h2>
                     <div className="grid grid-2 gap-8">
-                        <ul className="flex flex-col gap-2 text-secondary">
-                            <li className="flex gap-2"><span>1.</span> Visual inspection of body panels</li>
-                            <li className="flex gap-2"><span>2.</span> Tire tread depth and even wear</li>
-                            <li className="flex gap-2"><span>3.</span> Fluid leaks under the vehicle</li>
-                            <li className="flex gap-2"><span>4.</span> Ease of entry/exit</li>
-                            <li className="flex gap-2"><span>5.</span> Seat comfort and adjustability</li>
-                            <li className="flex gap-2"><span>6.</span> Visibility/Blind spots</li>
-                            <li className="flex gap-2"><span>7.</span> Infotainment responsiveness</li>
-                            <li className="flex gap-2"><span>8.</span> Cabin noise at highway speeds</li>
+                        <ul className="flex flex-col gap-3 text-secondary">
+                            <li className="flex gap-2"><span>1.</span> <strong>Visual Inspection:</strong> Look for inconsistent panel gaps or paint overspray.</li>
+                            <li className="flex gap-2"><span>2.</span> <strong>Tires:</strong> Check tread depth and ensure wear is even across all four.</li>
+                            <li className="flex gap-2"><span>3.</span> <strong>Leaks:</strong> Look under the car after it has been idling for a few minutes.</li>
+                            <li className="flex gap-2"><span>4.</span> <strong>Entry/Exit:</strong> Test the ease of getting in and out of all rows.</li>
+                            <li className="flex gap-2"><span>5.</span> <strong>Seat Comfort:</strong> Ensure the driver's seat provides adequate lumbar support.</li>
+                            <li className="flex gap-2"><span>6.</span> <strong>Visibility:</strong> Check blind spots and camera resolution.</li>
+                            <li className="flex gap-2"><span>7.</span> <strong>Infotainment:</strong> Test phone connectivity and menu responsiveness.</li>
+                            <li className="flex gap-2"><span>8.</span> <strong>Cabin Noise:</strong> Listen for rattles or excessive wind noise at highway speeds.</li>
                         </ul>
-                        <ul className="flex flex-col gap-2 text-secondary">
-                            <li className="flex gap-2"><span>9.</span> Brake feel (is it mushy?)</li>
-                            <li className="flex gap-2"><span>10.</span> Steering alignment (does it pull?)</li>
-                            <li className="flex gap-2"><span>11.</span> Transmission smoothness</li>
-                            <li className="flex gap-2"><span>12.</span> Suspension on bumpy roads</li>
-                            <li className="flex gap-2"><span>13.</span> Air conditioning/Heating speed</li>
-                            <li className="flex gap-2"><span>14.</span> Cargo space practicality</li>
-                            <li className="flex gap-2"><span>15.</span> "Gut feeling" - do you like driving it?</li>
+                        <ul className="flex flex-col gap-3 text-secondary">
+                            <li className="flex gap-2"><span>9.</span> <strong>Brake Feel:</strong> Ensure they don't feel "mushy" or pulsate.</li>
+                            <li className="flex gap-2"><span>10.</span> <strong>Alignment:</strong> The car should track straight when you loosen your grip slightly.</li>
+                            <li className="flex gap-2"><span>11.</span> <strong>Transmission:</strong> Shifts should be smooth, not jerky or hesitant.</li>
+                            <li className="flex gap-2"><span>12.</span> <strong>Suspension:</strong> Drive over speed bumps to check for clunks or bounce.</li>
+                            <li className="flex gap-2"><span>13.</span> <strong>Climate Control:</strong> Verify how quickly the A/C and heater respond.</li>
+                            <li className="flex gap-2"><span>14.</span> <strong>Cargo Space:</strong> Fold the seats to ensure your heaviest gear fits.</li>
+                            <li className="flex gap-2"><span>15.</span> <strong>User Interface:</strong> Are physical buttons easy to reach while driving?</li>
                         </ul>
                     </div>
                 </div>
@@ -182,6 +186,31 @@ export default function BuyingGuidePage() {
                         <div className="bento-item">
                             <h4 className="font-bold mb-2">Avoid Add-ons</h4>
                             <p className="text-sm text-secondary">Say no to "Paint Protection," "VIN Etching," or "Fabric Guard" packages.</p>
+                        </div>
+                    </div>
+                    <div className="card bg-hover border-none p-4 mt-8">
+                        <h4 className="font-bold text-sm mb-1">💡 Pro Tip</h4>
+                        <p className="text-xs text-secondary">Always negotiate the "Out the Door" price, not the monthly payment, to avoid hidden fees.</p>
+                    </div>
+                </div>
+            </section>
+
+            {/* Post-Purchase */}
+            <section className="section">
+                <div className="container">
+                    <h2 className="text-title mb-8">Post-Purchase: Your First 30 Days</h2>
+                    <div className="grid grid-3 gap-6">
+                        <div className="card">
+                            <h4 className="font-bold mb-2">Registration & Tax</h4>
+                            <p className="text-sm text-secondary">Ensure the dealer has processed your title. Check your local DMV for registration deadlines and tax obligations.</p>
+                        </div>
+                        <div className="card">
+                            <h4 className="font-bold mb-2">Insurance & Roadside</h4>
+                            <p className="text-sm text-secondary">Notify your provider and confirm if your manufacture warranty includes roadside assistance.</p>
+                        </div>
+                        <div className="card">
+                            <h4 className="font-bold mb-2">First Maintenance</h4>
+                            <p className="text-sm text-secondary">Review the service schedule. Some manufacturers offer a free 1,000-mile "check-up" service.</p>
                         </div>
                     </div>
                 </div>

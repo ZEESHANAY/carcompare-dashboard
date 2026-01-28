@@ -3,103 +3,123 @@ import Link from 'next/link';
 
 export default function ContactPage() {
     const faqs = [
-        { q: 'How do I report incorrect data?', a: 'Please use the "Data Correction" option in the contact form dropdown. Our team verifies all reports within 24 hours.' },
-        { q: 'Can I suggest a new feature?', a: 'Absolutely! Select "General Inquiry" and let us know what you would like to see. We build for our users.' },
-        { q: 'Do you have an API for developers?', a: 'We are currently testing our API with select partners. Contact us under "Partnerships" for more info.' },
-        { q: 'How is my private data handled?', a: 'We never sell your personal info. Check our Privacy Policy for a detailed breakdown.' },
+        { q: 'How do I report incorrect vehicle data?', a: 'Please select "Data Correction" in the form interest dropdown. Our research team usually verifies and updates discrepancies within 24 hours.' },
+        { q: 'Can I suggest a new feature or vehicle?', a: 'Absolutely! We love user feedback. Use "General Inquiry" and let us know what you would like to see next on the platform.' },
+        { q: 'Do you have an API for automotive developers?', a: 'We are currently in private beta with our API. Select "Partnership" to request early access for your project.' },
+        { q: 'Is my data shared with dealerships?', a: 'No. We are a consumer-first platform. We never sell your personal information or search history to third-party dealers.' },
+        { q: 'How often is the market data updated?', a: 'Our technical specs and regional pricing data are synced daily with manufacturer databases and market aggregators.' },
+        { q: 'Are you hiring for the data or engineering teams?', a: 'Yes! Check our About Us page for open roles or use the "General Inquiry" option to send us your portfolio.' },
     ];
 
     return (
         <div style={{ paddingTop: 'var(--header-height)' }}>
             {/* Header */}
-            <section className="section bg-surface text-center">
-                <div className="container">
-                    <h1 className="text-display mb-4" style={{ fontSize: '40px' }}>Get in Touch</h1>
-                    <p className="text-secondary" style={{ maxWidth: 600, margin: '0 auto' }}>
-                        Have questions about a comparison? Interested in partnering? Or just want to say hi? We're here to help.
+            <section className="section bg-surface">
+                <div className="container text-center">
+                    <span className="badge badge-accent mb-4">Support Hub</span>
+                    <h1 className="text-display mb-4" style={{ fontSize: '44px' }}>How can we help you?</h1>
+                    <p className="text-body-lg text-secondary" style={{ maxWidth: 650, margin: '0 auto' }}>
+                        Whether you're a buyer with a question or a manufacturer looking to partner, our team is ready to assist. Most inquiries receive a response within one business day.
                     </p>
                 </div>
             </section>
 
-            {/* Main Grid */}
+            {/* Content Grid */}
             <section className="section">
                 <div className="container">
-                    <div className="grid" style={{ gridTemplateColumns: '1fr 400px', gap: 'var(--space-12)' }}>
-                        {/* Form Side */}
-                        <div>
-                            <form className="flex flex-col gap-6">
-                                <div className="grid grid-2 gap-4">
-                                    <div className="flex flex-col gap-2">
-                                        <label className="text-sm font-bold">Your Name</label>
-                                        <input type="text" placeholder="John Doe" className="input" />
+                    <div className="grid" style={{ gridTemplateColumns: 'minmax(0, 1.2fr) minmax(0, 0.8fr)', gap: 'var(--space-16)' }}>
+                        {/* Left: Contact Form */}
+                        <div className="flex flex-col gap-8">
+                            <div className="card border-none bg-canvas p-10">
+                                <h3 className="text-2xl font-bold mb-8">Send a Message</h3>
+                                <form className="flex flex-col gap-6">
+                                    <div className="grid grid-2 gap-6">
+                                        <div className="flex flex-col gap-2">
+                                            <label className="text-xs font-bold uppercase tracking-wider text-muted">Your Full Name</label>
+                                            <input type="text" placeholder="John Doe" className="input" style={{ background: 'white' }} />
+                                        </div>
+                                        <div className="flex flex-col gap-2">
+                                            <label className="text-xs font-bold uppercase tracking-wider text-muted">Email Address</label>
+                                            <input type="email" placeholder="john@example.com" className="input" style={{ background: 'white' }} />
+                                        </div>
                                     </div>
                                     <div className="flex flex-col gap-2">
-                                        <label className="text-sm font-bold">Email Address</label>
-                                        <input type="email" placeholder="john@example.com" className="input" />
+                                        <label className="text-xs font-bold uppercase tracking-wider text-muted">I'm interested in:</label>
+                                        <select className="input bg-white cursor-pointer">
+                                            <option>General Inquiry</option>
+                                            <option>Partnership</option>
+                                            <option>Press</option>
+                                            <option>Support</option>
+                                            <option>Data Correction</option>
+                                        </select>
                                     </div>
-                                </div>
-                                <div className="flex flex-col gap-2">
-                                    <label className="text-sm font-bold">Interest</label>
-                                    <select className="input bg-white">
-                                        <option>General Inquiry</option>
-                                        <option>Partnership</option>
-                                        <option>Press</option>
-                                        <option>Support</option>
-                                        <option>Data Correction</option>
-                                    </select>
-                                </div>
-                                <div className="flex flex-col gap-2">
-                                    <label className="text-sm font-bold">Subject</label>
-                                    <input type="text" placeholder="How can we help?" className="input" />
-                                </div>
-                                <div className="flex flex-col gap-2">
-                                    <label className="text-sm font-bold">Message</label>
-                                    <textarea className="input" style={{ height: 150, padding: 'var(--space-3)', resize: 'none' }} placeholder="Tell us more..."></textarea>
-                                </div>
-                                <button className="btn btn-primary btn-lg w-fit px-12">Send Message</button>
-                                <p className="text-caption text-secondary">By clicking send, you agree to our terms and privacy policy.</p>
-                            </form>
+                                    <div className="flex flex-col gap-2">
+                                        <label className="text-xs font-bold uppercase tracking-wider text-muted">Subject</label>
+                                        <input type="text" placeholder="Brief summary of your inquiry" className="input" style={{ background: 'white' }} />
+                                    </div>
+                                    <div className="flex flex-col gap-2">
+                                        <label className="text-xs font-bold uppercase tracking-wider text-muted">Message</label>
+                                        <textarea className="input" style={{ height: 180, padding: 'var(--space-4)', resize: 'none', background: 'white' }} placeholder="How can we assist you today?"></textarea>
+                                    </div>
+                                    <button className="btn btn-primary btn-lg w-full mt-4">Submit Inquiry</button>
+                                    <p className="text-center text-caption text-secondary">
+                                        By submitting this form, you agree to our <Link href="/terms" className="link">Terms of Service</Link> and <Link href="/privacy" className="link">Privacy Policy</Link>.
+                                    </p>
+                                </form>
+                            </div>
                         </div>
 
-                        {/* Sidebar Info */}
-                        <aside className="flex flex-col gap-8">
-                            <div className="card bg-hover border-none">
-                                <h4 className="font-bold mb-4">Direct Contact</h4>
-                                <div className="flex flex-col gap-4">
-                                    <div>
-                                        <p className="text-caption text-muted uppercase">Email</p>
-                                        <p className="font-semibold">support@carcompare.com</p>
-                                    </div>
-                                    <div>
-                                        <p className="text-caption text-muted uppercase">Response Time</p>
-                                        <p className="font-semibold">Within 24 hours</p>
+                        {/* Right: Info & FAQ */}
+                        <aside className="flex flex-col gap-10">
+                            {/* Contact Info */}
+                            <div className="flex flex-col gap-6">
+                                <h4 className="font-bold text-sm uppercase tracking-widest text-accent">Direct Contact</h4>
+                                <div className="card p-6 border-none bg-hover">
+                                    <div className="flex flex-col gap-6">
+                                        <div>
+                                            <p className="text-xs text-muted font-bold uppercase mb-1">Support Email</p>
+                                            <p className="font-bold text-lg">support@carcompare.com</p>
+                                        </div>
+                                        <div>
+                                            <p className="text-xs text-muted font-bold uppercase mb-1">Expected Response</p>
+                                            <p className="font-bold text-lg">Within 24 hours</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div>
-                                <h4 className="font-bold mb-4">Common Questions</h4>
-                                <div className="flex flex-col gap-4">
+                            {/* FAQs */}
+                            <div className="flex flex-col gap-6">
+                                <h4 className="font-bold text-sm uppercase tracking-widest text-accent">Common Questions</h4>
+                                <div className="flex flex-col gap-6">
                                     {faqs.map((faq, i) => (
-                                        <div key={i} className="flex flex-col gap-1">
-                                            <p className="text-sm font-bold">{faq.q}</p>
-                                            <p className="text-caption text-secondary">{faq.a}</p>
+                                        <div key={i} className="flex flex-col gap-2 pb-4 border-bottom">
+                                            <p className="text-sm font-bold leading-tight">{faq.q}</p>
+                                            <p className="text-sm text-secondary leading-relaxed">{faq.a}</p>
                                         </div>
                                     ))}
                                 </div>
                             </div>
 
-                            <div className="card bg-surface">
-                                <h4 className="font-bold mb-3">Office Info</h4>
-                                <p className="text-sm text-secondary mb-1">CarCompare HQ (Remote-First)</p>
-                                <p className="text-sm text-secondary mb-4">San Francisco, CA</p>
-                                <p className="text-caption text-muted">Business Hours:<br />Mon - Fri, 9am - 5pm PST</p>
-                            </div>
-
-                            <div className="flex gap-4">
-                                <Link href="#" className="badge">Twitter</Link>
-                                <Link href="#" className="badge">LinkedIn</Link>
-                                <Link href="#" className="badge">GitHub</Link>
+                            {/* Office & Social */}
+                            <div className="flex flex-col gap-6">
+                                <h4 className="font-bold text-sm uppercase tracking-widest text-accent">Our Presence</h4>
+                                <div className="flex flex-col gap-4">
+                                    <p className="text-sm text-secondary leading-relaxed">
+                                        <strong>CarCompare HQ</strong><br />
+                                        Remote-first since 2024<br />
+                                        San Francisco, CA
+                                    </p>
+                                    <p className="text-caption text-muted">
+                                        <strong>Business Hours:</strong><br />
+                                        Mon - Fri: 9:00 AM - 5:00 PM PST
+                                    </p>
+                                    <div className="flex gap-4 mt-2">
+                                        <Link href="#" className="badge">Twitter</Link>
+                                        <Link href="#" className="badge">LinkedIn</Link>
+                                        <Link href="#" className="badge">GitHub</Link>
+                                    </div>
+                                </div>
                             </div>
                         </aside>
                     </div>
