@@ -27,20 +27,20 @@ export default function Footer() {
                     <div className="footer-column">
                         <h4>Resources</h4>
                         <ul className="footer-links">
-                            <li><Link href="#">Buying Guide</Link></li>
-                            <li><Link href="#">Car Reviews</Link></li>
-                            <li><Link href="#">News</Link></li>
-                            <li><Link href="#">Blog</Link></li>
+                            <li><Link href="/resources/buying-guide">Buying Guide</Link></li>
+                            <li><Link href="/resources/reviews">Car Reviews</Link></li>
+                            <li><Link href="/resources/news">News</Link></li>
+                            <li><Link href="/resources/blog">Blog</Link></li>
                         </ul>
                     </div>
 
                     <div className="footer-column">
                         <h4>Company</h4>
                         <ul className="footer-links">
-                            <li><Link href="#">About Us</Link></li>
-                            <li><Link href="#">Contact</Link></li>
-                            <li><Link href="#">Privacy</Link></li>
-                            <li><Link href="#">Terms</Link></li>
+                            <li><Link href="/about">About Us</Link></li>
+                            <li><Link href="/contact">Contact</Link></li>
+                            <li><Link href="/privacy">Privacy</Link></li>
+                            <li><Link href="/terms">Terms</Link></li>
                         </ul>
                     </div>
                 </div>
