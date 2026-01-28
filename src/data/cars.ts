@@ -237,7 +237,7 @@ export const cars: Car[] = [
         model: 'Civic Type R',
         year: 2024,
         category: 'Hot Hatch',
-        image: 'https://hips.hearstapps.com/hmg-prod/images/2024-honda-civic-type-r-110-657fd1c8ce15a.jpg?crop=0.669xw:0.503xh;0.186xw,0.271xh&resize=2048:*',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/d/d7/2023_Honda_Civic_Type_R_%28FL5%29_frontend.jpg',
         specs: {
             horsepower: 315,
             torque: 310,
@@ -269,7 +269,7 @@ export const cars: Car[] = [
         model: 'Mustang GT',
         year: 2024,
         category: 'Muscle Car',
-        image: 'https://hips.hearstapps.com/hmg-prod/images/2024-ford-mustang-gt-100-651ce21b99c2b.jpg?crop=0.723xw:0.815xh;0.140xw,0.134xh&resize=2048:*',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Ford_Mustang_GT_Fastback_5.0_V8_2024_%281%29.jpg',
         specs: {
             horsepower: 486,
             torque: 418,
@@ -301,7 +301,7 @@ export const cars: Car[] = [
         model: 'Huracán EVO',
         year: 2024,
         category: 'Supercar',
-        image: 'https://hips.hearstapps.com/hmg-prod/images/2023-lamborghini-huracan-sterrato-101-1669735844.jpg?crop=0.577xw:0.771xh;0.237xw,0.142xh&resize=2048:*',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/e/e5/2020_Lamborghini_Hurac%C3%A1n_EVO_Spyder_in_blue%2C_front_9.29.19.jpg',
         specs: {
             horsepower: 631,
             torque: 442,
@@ -333,7 +333,7 @@ export const cars: Car[] = [
         model: 'Corvette Z06',
         year: 2024,
         category: 'Sports Car',
-        image: 'https://hips.hearstapps.com/hmg-prod/images/2023-chevrolet-corvette-z06-coupe-3lz-with-z07-performance-package-121-1653499411.jpg?crop=0.719xw:0.547xh;0.122xw,0.271xh&resize=2048:*',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/5/5f/Chevrolet_Corvette_C8_Z06_1X7A5765.jpg',
         specs: {
             horsepower: 670,
             torque: 460,
@@ -365,7 +365,7 @@ export const cars: Car[] = [
         model: 'GT-R NISMO',
         year: 2024,
         category: 'Sports Car',
-        image: 'https://hips.hearstapps.com/hmg-prod/images/2020-nissan-gt-r-nismo-109-1567094970.jpg?crop=0.817xw:0.612xh;0.0625xw,0.299xh&resize=2048:*',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/4/4f/Nissan_GT-R_Nismo_%28R35%29_IMG_2607.jpg',
         specs: {
             horsepower: 600,
             torque: 481,
@@ -397,7 +397,7 @@ export const cars: Car[] = [
         model: 'LC 500',
         year: 2024,
         category: 'Grand Tourer',
-        image: 'https://hips.hearstapps.com/hmg-prod/images/2024-lexus-lc-500-105-657fd06aea07f.jpg?crop=0.693xw:0.521xh;0.193xw,0.304xh&resize=2048:*',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/5/5e/2018_Lexus_LC_500h_%28URZ100R%29_coupe_%282018-08-31%29_01.jpg',
         specs: {
             horsepower: 471,
             torque: 398,
