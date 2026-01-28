@@ -45,7 +45,7 @@ export const cars: Car[] = [
         model: 'M4 Competition',
         year: 2024,
         category: 'Sports Car',
-        image: '/cars/bmw-m4.jpg',
+        image: '/cars/bmw-m4.png',
         specs: {
             horsepower: 503,
             torque: 479,
@@ -77,7 +77,7 @@ export const cars: Car[] = [
         model: 'AMG C 63 S',
         year: 2024,
         category: 'Sports Sedan',
-        image: '/cars/mercedes-c63.jpg',
+        image: '/cars/mercedes-c63.png',
         specs: {
             horsepower: 671,
             torque: 752,
@@ -109,7 +109,7 @@ export const cars: Car[] = [
         model: 'Model S Plaid',
         year: 2024,
         category: 'Electric Sedan',
-        image: '/cars/tesla-model-s.jpg',
+        image: '/cars/tesla-model-s.png',
         specs: {
             horsepower: 1020,
             torque: 1050,
@@ -141,7 +141,7 @@ export const cars: Car[] = [
         model: '911 Turbo S',
         year: 2024,
         category: 'Sports Car',
-        image: '/cars/porsche-911.jpg',
+        image: '/cars/porsche-911.png',
         specs: {
             horsepower: 640,
             torque: 590,
@@ -173,7 +173,7 @@ export const cars: Car[] = [
         model: 'GR Supra',
         year: 2024,
         category: 'Sports Car',
-        image: 'https://4kwallpapers.com/images/wallpapers/toyota-gr-supra-3840x2160-11896.jpg',
+        image: '/cars/toyota-supra.png',
         specs: {
             horsepower: 382,
             torque: 368,
@@ -205,7 +205,7 @@ export const cars: Car[] = [
         model: 'RS 7 Sportback',
         year: 2024,
         category: 'Sports Sedan',
-        image: 'https://images.unsplash.com/photo-1621259182978-fbf93132d53d?q=80&w=2000&auto=format&fit=crop',
+        image: '/cars/audi-rs7.png',
         specs: {
             horsepower: 621,
             torque: 627,
@@ -237,7 +237,7 @@ export const cars: Car[] = [
         model: 'Civic Type R',
         year: 2024,
         category: 'Hot Hatch',
-        image: 'https://images.unsplash.com/photo-1618482815162-f2307ef66710?q=80&w=2000&auto=format&fit=crop',
+        image: 'https://hips.hearstapps.com/hmg-prod/images/2024-honda-civic-type-r-110-657fd1c8ce15a.jpg?crop=0.669xw:0.503xh;0.186xw,0.271xh&resize=2048:*',
         specs: {
             horsepower: 315,
             torque: 310,
@@ -269,7 +269,7 @@ export const cars: Car[] = [
         model: 'Mustang GT',
         year: 2024,
         category: 'Muscle Car',
-        image: 'https://images.unsplash.com/photo-1584345604476-8ec5e12e42dd?q=80&w=2000&auto=format&fit=crop',
+        image: 'https://hips.hearstapps.com/hmg-prod/images/2024-ford-mustang-gt-100-651ce21b99c2b.jpg?crop=0.723xw:0.815xh;0.140xw,0.134xh&resize=2048:*',
         specs: {
             horsepower: 486,
             torque: 418,
@@ -301,7 +301,7 @@ export const cars: Car[] = [
         model: 'Huracán EVO',
         year: 2024,
         category: 'Supercar',
-        image: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?q=80&w=2000&auto=format&fit=crop',
+        image: 'https://hips.hearstapps.com/hmg-prod/images/2023-lamborghini-huracan-sterrato-101-1669735844.jpg?crop=0.577xw:0.771xh;0.237xw,0.142xh&resize=2048:*',
         specs: {
             horsepower: 631,
             torque: 442,
@@ -333,7 +333,7 @@ export const cars: Car[] = [
         model: 'Corvette Z06',
         year: 2024,
         category: 'Sports Car',
-        image: 'https://images.unsplash.com/photo-1614200187524-dc4b892acf16?q=80&w=2000&auto=format&fit=crop',
+        image: 'https://hips.hearstapps.com/hmg-prod/images/2023-chevrolet-corvette-z06-coupe-3lz-with-z07-performance-package-121-1653499411.jpg?crop=0.719xw:0.547xh;0.122xw,0.271xh&resize=2048:*',
         specs: {
             horsepower: 670,
             torque: 460,
@@ -365,7 +365,7 @@ export const cars: Car[] = [
         model: 'GT-R NISMO',
         year: 2024,
         category: 'Sports Car',
-        image: 'https://images.unsplash.com/photo-1612053158066-cd061245036d?q=80&w=2000&auto=format&fit=crop',
+        image: 'https://hips.hearstapps.com/hmg-prod/images/2020-nissan-gt-r-nismo-109-1567094970.jpg?crop=0.817xw:0.612xh;0.0625xw,0.299xh&resize=2048:*',
         specs: {
             horsepower: 600,
             torque: 481,
@@ -397,7 +397,7 @@ export const cars: Car[] = [
         model: 'LC 500',
         year: 2024,
         category: 'Grand Tourer',
-        image: 'https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?q=80&w=2000&auto=format&fit=crop',
+        image: 'https://hips.hearstapps.com/hmg-prod/images/2024-lexus-lc-500-105-657fd06aea07f.jpg?crop=0.693xw:0.521xh;0.193xw,0.304xh&resize=2048:*',
         specs: {
             horsepower: 471,
             torque: 398,
