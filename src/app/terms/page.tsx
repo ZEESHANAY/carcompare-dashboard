@@ -26,14 +26,25 @@ export default function TermsOfServicePage() {
                     <p className="text-caption text-muted uppercase tracking-widest font-bold">Effective Date: January 28, 2026</p>
                     <hr className="mt-8 mb-10" style={{ border: 'none', borderTop: '1px solid var(--border-subtle)' }} />
 
-                    {/* Table of Contents */}
-                    <div className="bg-canvas border border-subtle rounded-2xl p-8 mb-16">
-                        <h4 className="font-bold mb-6 text-sm uppercase tracking-widest text-muted border-b pb-4">Table of Contents</h4>
-                        <nav className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4">
-                            {sections.map(s => (
-                                <Link key={s.id} href={`#${s.id}`} className="text-sm font-medium text-secondary hover:text-primary hover:translate-x-1 transition-all flex items-center gap-2">
-                                    <span className="w-1.5 h-1.5 rounded-full bg-border-subtle hover:bg-accent transition-colors"></span>
-                                    {s.title}
+                    {/* Premium Table of Contents */}
+                    <div className="mb-20">
+                        <div className="flex items-center gap-4 mb-8">
+                            <div className="h-px bg-border-subtle flex-1" />
+                            <h4 className="font-bold text-xs uppercase tracking-[0.2em] text-muted">Contents</h4>
+                            <div className="h-px bg-border-subtle flex-1" />
+                        </div>
+                        <nav className="grid grid-1 md:grid-2 gap-4">
+                            {sections.map((s, i) => (
+                                <Link key={s.id} href={`#${s.id}`} className="group p-5 rounded-2xl bg-white border border-subtle hover:border-primary/40 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 flex items-center gap-5">
+                                    <span className="text-2xl font-black text-muted/20 group-hover:text-primary group-hover:scale-110 transition-all duration-300">
+                                        {(i + 1).toString().padStart(2, '0')}
+                                    </span>
+                                    <span className="text-sm font-bold text-secondary group-hover:text-primary transition-colors">
+                                        {s.title.split('. ')[1] || s.title}
+                                    </span>
+                                    <div className="ml-auto opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-primary">
+                                        →
+                                    </div>
                                 </Link>
                             ))}
                         </nav>
