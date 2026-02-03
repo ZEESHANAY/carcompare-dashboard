@@ -237,7 +237,7 @@ export const cars: Car[] = [
         model: 'Civic Type R',
         year: 2024,
         category: 'Hot Hatch',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/d/d7/2023_Honda_Civic_Type_R_%28FL5%29_frontend.jpg',
+        image: '/cars/honda-civic-type-r.jpg',
         specs: {
             horsepower: 315,
             torque: 310,
@@ -269,7 +269,7 @@ export const cars: Car[] = [
         model: 'Mustang GT',
         year: 2024,
         category: 'Muscle Car',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Ford_Mustang_GT_Fastback_5.0_V8_2024_%281%29.jpg',
+        image: '/cars/ford-mustang-gt.jpg',
         specs: {
             horsepower: 486,
             torque: 418,
@@ -301,7 +301,7 @@ export const cars: Car[] = [
         model: 'Huracán EVO',
         year: 2024,
         category: 'Supercar',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/e/e5/2020_Lamborghini_Hurac%C3%A1n_EVO_Spyder_in_blue%2C_front_9.29.19.jpg',
+        image: '/cars/lamborghini-huracan.jpg',
         specs: {
             horsepower: 631,
             torque: 442,
@@ -333,7 +333,7 @@ export const cars: Car[] = [
         model: 'Corvette Z06',
         year: 2024,
         category: 'Sports Car',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/5/5f/Chevrolet_Corvette_C8_Z06_1X7A5765.jpg',
+        image: '/cars/chevrolet-corvette-z06.jpg',
         specs: {
             horsepower: 670,
             torque: 460,
@@ -365,7 +365,7 @@ export const cars: Car[] = [
         model: 'GT-R NISMO',
         year: 2024,
         category: 'Sports Car',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/4/4f/Nissan_GT-R_Nismo_%28R35%29_IMG_2607.jpg',
+        image: '/cars/nissan-gtr-nismo.jpg',
         specs: {
             horsepower: 600,
             torque: 481,
@@ -397,7 +397,7 @@ export const cars: Car[] = [
         model: 'LC 500',
         year: 2024,
         category: 'Grand Tourer',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/5/5e/2018_Lexus_LC_500h_%28URZ100R%29_coupe_%282018-08-31%29_01.jpg',
+        image: '/cars/lexus-lc500.jpg',
         specs: {
             horsepower: 471,
             torque: 398,
