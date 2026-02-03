@@ -27,11 +27,12 @@ export default function TermsOfServicePage() {
                     <hr className="mt-8 mb-10" style={{ border: 'none', borderTop: '1px solid var(--border-subtle)' }} />
 
                     {/* Table of Contents */}
-                    <div className="card bg-hover border-none mb-16 p-8">
-                        <h4 className="font-bold mb-6 text-sm uppercase tracking-widest">Table of Contents</h4>
-                        <nav className="grid grid-2 gap-x-12 gap-y-3">
+                    <div className="bg-canvas border border-subtle rounded-2xl p-8 mb-16">
+                        <h4 className="font-bold mb-6 text-sm uppercase tracking-widest text-muted border-b pb-4">Table of Contents</h4>
+                        <nav className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4">
                             {sections.map(s => (
-                                <Link key={s.id} href={`#${s.id}`} className="text-sm font-medium hover:text-accent transition-colors">
+                                <Link key={s.id} href={`#${s.id}`} className="text-sm font-medium text-secondary hover:text-primary hover:translate-x-1 transition-all flex items-center gap-2">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-border-subtle hover:bg-accent transition-colors"></span>
                                     {s.title}
                                 </Link>
                             ))}
@@ -53,21 +54,21 @@ export default function TermsOfServicePage() {
                         <section id="accounts">
                             <h2 className="text-title text-primary mb-3">3. User Accounts</h2>
                             <p className="mb-4">While many features are available without registration, certain comparison persistence tools require an account. You agree to:</p>
-                            <ul className="list-disc pl-6 space-y-2">
-                                <li>Provide accurate and complete information during registration.</li>
-                                <li>Maintain the security of your password and account details.</li>
-                                <li>Promptly notify us of any unauthorized use of your account.</li>
-                            </ul>
+                            <div className="flex flex-col gap-3 pl-0">
+                                <p><strong className="text-primary">Accuracy:</strong> Provide accurate and complete information during registration.</p>
+                                <p><strong className="text-primary">Security:</strong> Maintain the security of your password and account details.</p>
+                                <p><strong className="text-primary">Notification:</strong> Promptly notify us of any unauthorized use of your account.</p>
+                            </div>
                         </section>
 
                         <section id="use">
                             <h2 className="text-title text-primary mb-3">4. Acceptable Use</h2>
                             <p className="mb-4">You are granted a limited, non-exclusive license to use CarCompare. You agree not to:</p>
-                            <ul className="list-disc pl-6 space-y-2">
-                                <li>Use any automated system (robots, scrapers, etc.) to access or extract data from the platform.</li>
-                                <li>Use Service data for any commercial purpose without explicit written consent.</li>
-                                <li>Attempt to interfere with the proper working of the platform or bypass any security measures.</li>
-                            </ul>
+                            <div className="flex flex-col gap-3 pl-0">
+                                <p><strong className="text-primary">Scraping:</strong> Use any automated system (robots, scrapers, etc.) to access or extract data from the platform.</p>
+                                <p><strong className="text-primary">Commercial Use:</strong> Use Service data for any commercial purpose without explicit written consent.</p>
+                                <p><strong className="text-primary">Interference:</strong> Attempt to interfere with the proper working of the platform or bypass any security measures.</p>
+                            </div>
                         </section>
 
                         <section id="accuracy">

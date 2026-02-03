@@ -24,11 +24,12 @@ export default function PrivacyPolicyPage() {
                     <hr className="mt-8 mb-10" style={{ border: 'none', borderTop: '1px solid var(--border-subtle)' }} />
 
                     {/* Table of Contents */}
-                    <div className="card bg-hover border-none mb-16 p-8">
-                        <h4 className="font-bold mb-6 text-sm uppercase tracking-widest">Table of Contents</h4>
-                        <nav className="grid grid-2 gap-x-12 gap-y-3">
+                    <div className="bg-canvas border border-subtle rounded-2xl p-8 mb-16">
+                        <h4 className="font-bold mb-6 text-sm uppercase tracking-widest text-muted border-b pb-4">Table of Contents</h4>
+                        <nav className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4">
                             {sections.map(s => (
-                                <Link key={s.id} href={`#${s.id}`} className="text-sm font-medium hover:text-accent transition-colors">
+                                <Link key={s.id} href={`#${s.id}`} className="text-sm font-medium text-secondary hover:text-primary hover:translate-x-1 transition-all flex items-center gap-2">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-border-subtle hover:bg-accent transition-colors"></span>
                                     {s.title}
                                 </Link>
                             ))}
@@ -46,33 +47,33 @@ export default function PrivacyPolicyPage() {
                         <section id="collection">
                             <h2 className="text-title text-primary mb-3">1. Information We Collect</h2>
                             <p className="mb-4">We collect information that you provide to us, information collected automatically, and information from third parties. This includes:</p>
-                            <ul className="list-disc pl-6 space-y-3">
-                                <li><strong>Account Data:</strong> If you register, we collect your name, email, and preferences.</li>
-                                <li><strong>Comparison History:</strong> We store the vehicles you compare to provide a personalized experience and persistent comparison docks.</li>
-                                <li><strong>Usage Data:</strong> We automatically collect information about your interactions with the site, including IP addresses, browser types, and pages visited.</li>
-                                <li><strong>Cookies:</strong> Small files stored on your device that help us remember your settings and analyze site traffic.</li>
-                            </ul>
+                            <div className="flex flex-col gap-3 pl-0">
+                                <p><strong className="text-primary">Account Data:</strong> If you register, we collect your name, email, and preferences.</p>
+                                <p><strong className="text-primary">Comparison History:</strong> We store the vehicles you compare to provide a personalized experience and persistent comparison docks.</p>
+                                <p><strong className="text-primary">Usage Data:</strong> We automatically collect information about your interactions with the site, including IP addresses, browser types, and pages visited.</p>
+                                <p><strong className="text-primary">Cookies:</strong> Small files stored on your device that help us remember your settings and analyze site traffic.</p>
+                            </div>
                         </section>
 
                         <section id="usage">
                             <h2 className="text-title text-primary mb-3">2. How We Use Information</h2>
                             <p className="mb-4">We use the data we collect to provide and improve the CarCompare experience:</p>
-                            <ul className="list-disc pl-6 space-y-3">
-                                <li><strong>Service Delivery:</strong> Maintaining your comparison sets and vehicle history.</li>
-                                <li><strong>Personalization:</strong> Recommending vehicles based on your search patterns and preferences.</li>
-                                <li><strong>Analytics:</strong> Understanding how users interact with our tools to build better features.</li>
-                                <li><strong>Marketing:</strong> With your explicit consent, sending you newsletters and market updates. You may opt-out at any time.</li>
-                            </ul>
+                            <div className="flex flex-col gap-3 pl-0">
+                                <p><strong className="text-primary">Service Delivery:</strong> Maintaining your comparison sets and vehicle history.</p>
+                                <p><strong className="text-primary">Personalization:</strong> Recommending vehicles based on your search patterns and preferences.</p>
+                                <p><strong className="text-primary">Analytics:</strong> Understanding how users interact with our tools to build better features.</p>
+                                <p><strong className="text-primary">Marketing:</strong> With your explicit consent, sending you newsletters and market updates. You may opt-out at any time.</p>
+                            </div>
                         </section>
 
                         <section id="sharing">
                             <h2 className="text-title text-primary mb-3">3. Data Sharing & Disclosure</h2>
                             <p className="mb-4"><strong>Crucially, CarCompare does not sell your personal data to third parties or dealerships.</strong> We only share data in these limited cases:</p>
-                            <ul className="list-disc pl-6 space-y-3">
-                                <li><strong>Service Providers:</strong> Vendors who assist with hosting, analytics (like Google Analytics), and email delivery.</li>
-                                <li><strong>Legal Requirements:</strong> To comply with a legal obligation, protect our rights, or prevent fraud.</li>
-                                <li><strong>Business Transfers:</strong> In the event of a merger or sale of the company.</li>
-                            </ul>
+                            <div className="flex flex-col gap-3 pl-0">
+                                <p><strong className="text-primary">Service Providers:</strong> Vendors who assist with hosting, analytics (like Google Analytics), and email delivery.</p>
+                                <p><strong className="text-primary">Legal Requirements:</strong> To comply with a legal obligation, protect our rights, or prevent fraud.</p>
+                                <p><strong className="text-primary">Business Transfers:</strong> In the event of a merger or sale of the company.</p>
+                            </div>
                         </section>
 
                         <section id="cookies">
@@ -83,12 +84,12 @@ export default function PrivacyPolicyPage() {
                         <section id="rights">
                             <h2 className="text-title text-primary mb-3">5. Your Rights & Choices</h2>
                             <p className="mb-4">We support privacy rights globally, including GDPR and CCPA. You have the right to:</p>
-                            <ul className="list-disc pl-6 space-y-3">
-                                <li>Request access to the personal data we hold about you.</li>
-                                <li>Request the deletion of your account and associated data.</li>
-                                <li>Object to the processing of your data for marketing purposes.</li>
-                                <li>Export your data in a machine-readable format.</li>
-                            </ul>
+                            <div className="flex flex-col gap-3 pl-0">
+                                <p><strong className="text-primary">Access:</strong> Request access to the personal data we hold about you.</p>
+                                <p><strong className="text-primary">Deletion:</strong> Request the deletion of your account and associated data.</p>
+                                <p><strong className="text-primary">Opt-Out:</strong> Object to the processing of your data for marketing purposes.</p>
+                                <p><strong className="text-primary">Portability:</strong> Export your data in a machine-readable format.</p>
+                            </div>
                         </section>
 
                         <section id="security">
