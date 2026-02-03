@@ -18,7 +18,7 @@ export default function PrivacyPolicyPage() {
         <div style={{ paddingTop: 'var(--header-height)' }}>
             {/* Header */}
             <section className="section bg-surface">
-                <div className="container" style={{ maxWidth: 850 }}>
+                <div className="container" style={{ maxWidth: 1000 }}>
                     <h1 className="text-display mb-2" style={{ fontSize: '36px' }}>Privacy Policy</h1>
                     <p className="text-caption text-muted uppercase tracking-widest font-bold">Last Updated: January 28, 2026</p>
                     <hr className="mt-8 mb-10" style={{ border: 'none', borderTop: '1px solid var(--border-subtle)' }} />
@@ -36,7 +36,7 @@ export default function PrivacyPolicyPage() {
                     </div>
 
                     {/* Content */}
-                    <div className="flex flex-col gap-16 text-secondary leading-relaxed">
+                    <div className="flex flex-col gap-16 text-secondary leading-relaxed text-lg">
                         <section id="introduction">
                             <p className="text-lg text-primary font-medium italic">
                                 At CarCompare, your trust is our most valuable asset. We are committed to being transparent about how we collect, use, and protect your personal information while you use our automotive research platform.
@@ -44,9 +44,9 @@ export default function PrivacyPolicyPage() {
                         </section>
 
                         <section id="collection">
-                            <h2 className="text-title text-primary mb-6">1. Information We Collect</h2>
+                            <h2 className="text-title text-primary mb-3">1. Information We Collect</h2>
                             <p className="mb-4">We collect information that you provide to us, information collected automatically, and information from third parties. This includes:</p>
-                            <ul className="flex flex-col gap-4 list-disc pl-6">
+                            <ul className="list-disc pl-6 space-y-3">
                                 <li><strong>Account Data:</strong> If you register, we collect your name, email, and preferences.</li>
                                 <li><strong>Comparison History:</strong> We store the vehicles you compare to provide a personalized experience and persistent comparison docks.</li>
                                 <li><strong>Usage Data:</strong> We automatically collect information about your interactions with the site, including IP addresses, browser types, and pages visited.</li>
@@ -55,9 +55,9 @@ export default function PrivacyPolicyPage() {
                         </section>
 
                         <section id="usage">
-                            <h2 className="text-title text-primary mb-6">2. How We Use Information</h2>
+                            <h2 className="text-title text-primary mb-3">2. How We Use Information</h2>
                             <p className="mb-4">We use the data we collect to provide and improve the CarCompare experience:</p>
-                            <ul className="flex flex-col gap-4 list-disc pl-6">
+                            <ul className="list-disc pl-6 space-y-3">
                                 <li><strong>Service Delivery:</strong> Maintaining your comparison sets and vehicle history.</li>
                                 <li><strong>Personalization:</strong> Recommending vehicles based on your search patterns and preferences.</li>
                                 <li><strong>Analytics:</strong> Understanding how users interact with our tools to build better features.</li>
@@ -66,9 +66,9 @@ export default function PrivacyPolicyPage() {
                         </section>
 
                         <section id="sharing">
-                            <h2 className="text-title text-primary mb-6">3. Data Sharing & Disclosure</h2>
+                            <h2 className="text-title text-primary mb-3">3. Data Sharing & Disclosure</h2>
                             <p className="mb-4"><strong>Crucially, CarCompare does not sell your personal data to third parties or dealerships.</strong> We only share data in these limited cases:</p>
-                            <ul className="flex flex-col gap-4 list-disc pl-6">
+                            <ul className="list-disc pl-6 space-y-3">
                                 <li><strong>Service Providers:</strong> Vendors who assist with hosting, analytics (like Google Analytics), and email delivery.</li>
                                 <li><strong>Legal Requirements:</strong> To comply with a legal obligation, protect our rights, or prevent fraud.</li>
                                 <li><strong>Business Transfers:</strong> In the event of a merger or sale of the company.</li>
@@ -76,14 +76,14 @@ export default function PrivacyPolicyPage() {
                         </section>
 
                         <section id="cookies">
-                            <h2 className="text-title text-primary mb-6">4. Cookies & Tracking Technologies</h2>
+                            <h2 className="text-title text-primary mb-3">4. Cookies & Tracking Technologies</h2>
                             <p>We use essential cookies for site functionality and performance cookies to understand usage. You can manage your cookie preferences through your browser settings, though some features of CarCompare may not function correctly without them.</p>
                         </section>
 
                         <section id="rights">
-                            <h2 className="text-title text-primary mb-6">5. Your Rights & Choices</h2>
+                            <h2 className="text-title text-primary mb-3">5. Your Rights & Choices</h2>
                             <p className="mb-4">We support privacy rights globally, including GDPR and CCPA. You have the right to:</p>
-                            <ul className="flex flex-col gap-4 list-disc pl-6">
+                            <ul className="list-disc pl-6 space-y-3">
                                 <li>Request access to the personal data we hold about you.</li>
                                 <li>Request the deletion of your account and associated data.</li>
                                 <li>Object to the processing of your data for marketing purposes.</li>
@@ -92,22 +92,22 @@ export default function PrivacyPolicyPage() {
                         </section>
 
                         <section id="security">
-                            <h2 className="text-title text-primary mb-6">6. Data Security & Retention</h2>
+                            <h2 className="text-title text-primary mb-3">6. Data Security & Retention</h2>
                             <p>We implement industry-standard encryption (SSL/TLS) and regular security audits to protect your information. We retain your data only for as long as necessary to provide our services or as required by law.</p>
                         </section>
 
                         <section id="children">
-                            <h2 className="text-title text-primary mb-6">7. Children's Privacy</h2>
+                            <h2 className="text-title text-primary mb-3">7. Children's Privacy</h2>
                             <p>Our service is not intended for individuals under the age of 13. We do not knowingly collect personal information from children. If we become aware of such data, we will take immediate steps to delete it.</p>
                         </section>
 
                         <section id="changes">
-                            <h2 className="text-title text-primary mb-6">8. Changes to this Policy</h2>
+                            <h2 className="text-title text-primary mb-3">8. Changes to this Policy</h2>
                             <p>We may update this policy periodically. We will notify you of any significant changes by posting the new policy on this page and updating the "Last Updated" date at the top.</p>
                         </section>
 
                         <section id="contact">
-                            <h2 className="text-title text-primary mb-6">9. Contact Information</h2>
+                            <h2 className="text-title text-primary mb-3">9. Contact Information</h2>
                             <p className="mb-4">If you have questions about our privacy practices, please contact our Data Protection Officer:</p>
                             <p className="font-bold">Email: <Link href="mailto:privacy@carcompare.com" className="link text-primary">privacy@carcompare.com</Link></p>
                         </section>
