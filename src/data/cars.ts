@@ -269,7 +269,7 @@ export const cars: Car[] = [
         model: 'Mustang GT',
         year: 2024,
         category: 'Muscle Car',
-        image: '/images/cars/ford-mustang-gt.jpg',
+        image: '/images/cars/ford-mustang-gt.png',
         specs: {
             horsepower: 486,
             torque: 418,
