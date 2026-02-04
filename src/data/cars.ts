@@ -237,7 +237,7 @@ export const cars: Car[] = [
         model: 'Civic Type R',
         year: 2024,
         category: 'Hot Hatch',
-        image: '/images/cars/honda-civic-type-r.png',
+        image: '/images/cars/honda-civic-type-r.jpg',
         specs: {
             horsepower: 315,
             torque: 310,
