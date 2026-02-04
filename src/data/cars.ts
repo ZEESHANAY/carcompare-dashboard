@@ -237,7 +237,7 @@ export const cars: Car[] = [
         model: 'Civic Type R',
         year: 2024,
         category: 'Hot Hatch',
-        image: '/cars/honda-civic-type-r.jpg',
+        image: '/images/cars/honda-civic-type-r.png',
         specs: {
             horsepower: 315,
             torque: 310,
@@ -269,7 +269,7 @@ export const cars: Car[] = [
         model: 'Mustang GT',
         year: 2024,
         category: 'Muscle Car',
-        image: '/cars/ford-mustang-gt.jpg',
+        image: '/images/cars/ford-mustang-gt.jpg',
         specs: {
             horsepower: 486,
             torque: 418,
@@ -301,7 +301,7 @@ export const cars: Car[] = [
         model: 'Huracán EVO',
         year: 2024,
         category: 'Supercar',
-        image: '/cars/lamborghini-huracan.jpg',
+        image: '/images/cars/lamborghini-huracan.jpg',
         specs: {
             horsepower: 631,
             torque: 442,
@@ -333,7 +333,7 @@ export const cars: Car[] = [
         model: 'Corvette Z06',
         year: 2024,
         category: 'Sports Car',
-        image: '/cars/chevrolet-corvette-z06.jpg',
+        image: '/images/cars/chevrolet-corvette-z06.jpg',
         specs: {
             horsepower: 670,
             torque: 460,
@@ -365,7 +365,7 @@ export const cars: Car[] = [
         model: 'GT-R NISMO',
         year: 2024,
         category: 'Sports Car',
-        image: '/cars/nissan-gtr-nismo.jpg',
+        image: '/images/cars/nissan-gtr-nismo.jpg',
         specs: {
             horsepower: 600,
             torque: 481,
@@ -397,7 +397,7 @@ export const cars: Car[] = [
         model: 'LC 500',
         year: 2024,
         category: 'Grand Tourer',
-        image: '/cars/lexus-lc500.jpg',
+        image: '/images/cars/lexus-lc500.jpg',
         specs: {
             horsepower: 471,
             torque: 398,
